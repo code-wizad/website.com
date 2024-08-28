@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --bgBlack: black;
+    --text-highlighter: grey;
+    --color: white;
+    --primaryFont: "Inter", sans-serif;
+    --fw1: 100;
+    --fw2: 200;
+    --fw3: 300;
+    --fw4: 400;
+    --fw5: 500;
+    --fw6: 600;
+    --fw7: 700;
+    --fw8: 800;
+    --fw9: 900;
+    --fw10: 1000;
+    font-optical-sizing: auto;
+    font-weight: var(--fw5);
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background-color: var(--bgBlack); */
+    font-family: var(--primaryFont);
+    font-weight: inherit;
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    /* color: var(--color); */
+    color: blue;
+
+}
+
+*.highlighter {
+    color: var(--text-highlighter);
+    font-weight: var(--fw4);
+}
+
+nav#index {
+    background-color: var(--bgBlack);
+
+    a.navbar-brand {
+        color: grey;
+    }
+
+    & ul {
+        background-color: grey;
+
+        & a {
+            color: black;
+        }
+    }
+}
+
+button.navbar-toggler.hamburger {
+    box-shadow: none;
+    border: none;
+    background-color: orange;
+}
+
+/* hero section  */
+.section-hero {
+    background-color: var(--bgBlack);
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-images img {
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
